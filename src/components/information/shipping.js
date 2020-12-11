@@ -22,9 +22,9 @@ class Shipping extends Component {
 
     render() {
         return (
-            <div className='shipping-form'>
-                <PageTitle className='shipping-form__page-title' title='Shipping Address' />
-                <ShippingForm onSubmit={this.onSubmit} className='shipping-form__form' />
+            <div className='shipping'>
+                <PageTitle className='shipping__page-title' title='Shipping Address' />
+                <ShippingForm onSubmit={this.onSubmit} className='shipping__form' />
             </div>
         )
     }
@@ -33,3 +33,4 @@ class Shipping extends Component {
 Shipping = connect(null, actions)(Shipping);
 
 export default Shipping;
+
